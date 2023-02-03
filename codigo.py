@@ -6,7 +6,6 @@ def atbash_slow(sequence: str) -> str:
     """
     >>> atbash_slow("ABCDEFG")
     'ZYXWVUT'
-
     >>> atbash_slow("aW;;123BX")
     'zD;;123YC'
     """
@@ -26,7 +25,6 @@ def atbash(sequence: str) -> str:
     """
     >>> atbash("ABCDEFG")
     'ZYXWVUT'
-
     >>> atbash("aW;;123BX")
     'zD;;123YC'
     """
@@ -48,6 +46,6 @@ def benchmark() -> None:
 
 
 if __name__ == "__main__":
-    for example in ("ABCDEFGH", "123GGjj", "testStringtest", "with space"):
+    for example in ("ABCDEFGH", "123GGjj", "gsvuoztrhhzbdvzivxizab", "with space"):
         print(f"{example} encrypted in atbash: {atbash(example)}")
     benchmark()
